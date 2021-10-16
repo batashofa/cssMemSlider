@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <title>CSS Slider</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
 <main class="main">
+    <h1 class="h1">CSS Mem Slider</h1>
     <input checked type="radio" name="respond" id="desktop">
-    <article id="slider">
+    <article class="slider">
         <input checked type="radio" name="slider" id="switch1">
         <input type="radio" name="slider" id="switch2">
         <input type="radio" name="slider" id="switch3">
@@ -32,7 +36,18 @@
             <label for="switch4"></label>
             <label for="switch5"></label>
         </div>
-        <div id="active">
+        <div class="slides__wrapper">
+            <div class="slides__wrapper-overflow">
+                <div class="slides__wrapper-text">
+                    <article><p>Slide1</p></article>
+                    <article><p>Slide2</p></article>
+                    <article><p>Slide3</p></article>
+                    <article><p>Slide4</p></article>
+                    <article><p>Slide5</p></article>
+                </div>
+            </div>
+        </div>
+        <div class="slides__active">
             <label for="switch1"></label>
             <label for="switch2"></label>
             <label for="switch3"></label>
