@@ -182,9 +182,12 @@ label, a {
     margin: -25% 0 0 0;
     width: 100%;
 }
-
 .slides__active label {
-    margin: 0 0.2rem 2rem;
+    padding: 10px 3px;
+}
+
+.slides__active label span {
+    margin: 0;
     display: inline-block;
     width: 0.8rem;
     height: 0.8rem;
@@ -195,6 +198,7 @@ label, a {
     border-radius: 50%;
 }
 
+
 .slides__active {
     text-align: end;
     margin-top: -1.6em;
@@ -203,16 +207,16 @@ label, a {
     background-color: #777777;
 }
 
-.slides__active label:hover {
+.slides__active label:hover span {
     background: white;
     border-color: white !important;
 }
 
-#switch1:checked ~ .slides__active label:nth-child(1),
-#switch2:checked ~ .slides__active label:nth-child(2),
-#switch3:checked ~ .slides__active label:nth-child(3),
-#switch4:checked ~ .slides__active label:nth-child(4),
-#switch5:checked ~ .slides__active label:nth-child(5) {
+#switch1:checked ~ .slides__active label:nth-child(1) span,
+#switch2:checked ~ .slides__active label:nth-child(2) span,
+#switch3:checked ~ .slides__active label:nth-child(3) span,
+#switch4:checked ~ .slides__active label:nth-child(4) span,
+#switch5:checked ~ .slides__active label:nth-child(5) span {
     background: none;
     background-clip: padding-box;
 }
@@ -264,8 +268,11 @@ label, a {
         font-size: 1.5rem;
         margin: 10% auto 10% 10%;
     }
-
     .slides__active label {
+        padding: 0;
+    }
+
+    .slides__active label span{
         width: 0.4rem;
         height: 0.4rem;
         border: 0.15rem solid;
