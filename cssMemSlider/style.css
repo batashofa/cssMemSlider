@@ -234,8 +234,8 @@ label, a {
     display: flex;
     overflow: hidden;
     max-width: 100%;
-    margin: 2rem 12% 0;
-    width: 70%;
+    margin: 2rem 18% 0;
+    width: 64%;
 }
 
 .footer__slide {
@@ -278,11 +278,15 @@ label, a {
     }
 
     #desktop:checked ~ .slider {
-        max-width: 57rem;
+        max-width: 17.3rem;
+    }
+
+    .slider {
+        margin: 0;
     }
 
     .slides__wrapper span {
-        height: 31vh;
+        height: 28vh;
     }
 
     .slides__wrapper .slides__wrapper-text {
@@ -300,7 +304,7 @@ label, a {
     }
 
     .footer {
-        margin: 5rem 8% 0;
+        margin: 6rem 5% 0;
         width: 83%;
     }
 
