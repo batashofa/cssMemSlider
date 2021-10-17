@@ -1,0 +1,321 @@
+body {
+    background-color: #777777;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.h1 {
+    margin: 3% auto 1% 10%;
+}
+
+.slider {
+    position: relative;
+    text-align: start;
+    top: 2%;
+}
+
+.slider {
+    margin: 0 auto;
+}
+
+.slides__wrapper span {
+    width: 20%;
+    height: 55vh;
+    float: left;
+}
+
+.slides__wrapper article {
+    width: 20%;
+    float: left;
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("img/img2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.img2 {
+    background-image: url("img/img1.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.img3 {
+    background-image: url("img/img3.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.img4 {
+    background-image: url("img/img4.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.img5 {
+    background-image: url("img/img5.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slides__wrapper-p {
+    display: block;
+    margin: 2% 0 0;
+}
+
+.slides__wrapper .slides__wrapper-image {
+    width: 500%;
+    line-height: 0;
+}
+
+.slides__wrapper .slides__wrapper-text {
+    width: 500%;
+    line-height: 0;
+    margin: 15% 0 0;
+}
+
+.slides__wrapper-overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#desktop:checked ~ .slider {
+    max-width: 65rem;
+}
+
+#switch1:checked ~ .slides__controls label:nth-child(5),
+#switch2:checked ~ .slides__controls label:nth-child(1),
+#switch3:checked ~ .slides__controls label:nth-child(2),
+#switch4:checked ~ .slides__controls label:nth-child(3),
+#switch5:checked ~ .slides__controls label:nth-child(4) {
+    background: url('img/prev.png') no-repeat;
+    float: left;
+    margin: -3rem 0 0 -6rem;
+    display: block;
+    height: 11rem;
+    width: 8rem;
+}
+
+#switch1:checked ~ .slides__controls label:nth-child(2),
+#switch2:checked ~ .slides__controls label:nth-child(3),
+#switch3:checked ~ .slides__controls label:nth-child(4),
+#switch4:checked ~ .slides__controls label:nth-child(5),
+#switch5:checked ~ .slides__controls label:nth-child(1) {
+    background: url('img/next.png') no-repeat;
+    float: right;
+    margin: -3rem -10rem 0 0;
+    display: block;
+    height: 8rem;
+    width: 8rem;
+}
+
+label, a {
+    cursor: pointer;
+}
+
+.main input {
+    display: none;
+}
+
+#switch1:checked ~ .slides__wrapper .slides__wrapper-image {
+    margin-left: 0;
+}
+
+#switch2:checked ~ .slides__wrapper .slides__wrapper-image {
+    margin-left: -100%;
+}
+
+#switch3:checked ~ .slides__wrapper .slides__wrapper-image {
+    margin-left: -200%;
+}
+
+#switch4:checked ~ .slides__wrapper .slides__wrapper-image {
+    margin-left: -300%;
+}
+
+#switch5:checked ~ .slides__wrapper .slides__wrapper-image {
+    margin-left: -400%;
+}
+
+
+#switch1:checked ~ .slides__wrapper .slides__wrapper-text {
+    margin-left: 0;
+}
+
+#switch2:checked ~ .slides__wrapper .slides__wrapper-text {
+    margin-left: -100%;
+}
+
+#switch3:checked ~ .slides__wrapper .slides__wrapper-text {
+    margin-left: -200%;
+}
+
+#switch4:checked ~ .slides__wrapper .slides__wrapper-text {
+    margin-left: -300%;
+}
+
+#switch5:checked ~ .slides__wrapper .slides__wrapper-text {
+    margin-left: -400%;
+}
+
+.slides__controls {
+    margin: -25% 0 0 0;
+    width: 100%;
+}
+.slides__active label {
+    padding: 10px 3px;
+}
+
+.slides__active label span {
+    margin: 0;
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: black;
+    border-color: black !important;
+    border: 0.3rem solid white;
+    outline: none;
+    border-radius: 50%;
+}
+
+
+.slides__active {
+    text-align: end;
+    margin-top: -1.6em;
+    width: 30rem;
+    float: right;
+    background-color: #777777;
+}
+
+.slides__active label:hover span {
+    background: white;
+    border-color: white !important;
+}
+
+#switch1:checked ~ .slides__active label:nth-child(1) span,
+#switch2:checked ~ .slides__active label:nth-child(2) span,
+#switch3:checked ~ .slides__active label:nth-child(3) span,
+#switch4:checked ~ .slides__active label:nth-child(4) span,
+#switch5:checked ~ .slides__active label:nth-child(5) span {
+    background: none;
+    background-clip: padding-box;
+}
+
+.slides__wrapper .slides__wrapper-image {
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.slides__wrapper .slides__wrapper-text {
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.slides__controls label:hover {
+    opacity: 0.6;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 2rem 18% 0;
+    width: 64%;
+}
+
+.footer__slide {
+    display: flex;
+    align-items: center;
+    animation: slideshow 80s linear infinite;
+}
+
+.footer__slide-image {
+    width: auto;
+    height: 10vh;
+    margin: 0 3rem;
+}
+
+@keyframes slideshow {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .h1 {
+        font-size: 1.5rem;
+        margin: 10% auto 10% 10%;
+    }
+    .slides__active label {
+        padding: 0;
+    }
+
+    .slides__active label span{
+        width: 0.4rem;
+        height: 0.4rem;
+        border: 0.15rem solid;
+        margin: 0.5rem 0.1rem 0.5rem;
+    }
+
+    .slides__controls {
+        display: none;
+        width: 50%;
+    }
+
+    #desktop:checked ~ .slider {
+        max-width: 17.3rem;
+    }
+
+    .slider {
+        margin: 0;
+    }
+
+    .slides__wrapper span {
+        height: 28vh;
+    }
+
+    .slides__wrapper .slides__wrapper-text {
+        font-size: 1rem;
+        margin: 3% 0 0;
+    }
+
+    article p {
+        margin: 3rem 0;
+    }
+
+    .slides__active {
+        margin: -5.8rem 6rem 0 0;
+        width: 6.2rem;
+    }
+
+    .footer {
+        margin: 6rem 5% 0;
+        width: 83%;
+    }
+
+    .footer__slide-image {
+        margin: 0 1rem;
+    }
+}
